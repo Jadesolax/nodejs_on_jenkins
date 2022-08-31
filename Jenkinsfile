@@ -21,7 +21,7 @@ pipeline {
                     sudo git init
                     sudo git remote add origin https://github.com/Jadesolax/nodejs_on_jenkins.git
                     sudo git pull origin master
-                    
+                    sudo npm run
 
                 '''
             }
