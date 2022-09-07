@@ -12,12 +12,12 @@ pipeline {
             echo "this is running"
 
             sh '''
-                    sudo ssh -i /var/lib/jenkins/nodej.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-3-8-203-58.eu-west-2.compute.amazonaws.com
+                    sudo ssh -i /var/lib/jenkins/node.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-13-42-22-82.eu-west-2.compute.amazonaws.com
 
                 
-                    sudo rm -rf ~/nodej
-                    sudo mkdir ~/nodej
-                    cd ~/nodej
+                    sudo rm -rf ~/node
+                    sudo mkdir ~/node
+                    cd ~/node
                     sudo git init
                     sudo git remote add origin https://github.com/Jadesolax/nodejs_on_jenkins.git
                     sudo git pull origin master
