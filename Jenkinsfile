@@ -12,7 +12,7 @@ pipeline {
             echo "this is running"
 
             sh '''
-                    sudo ssh -i /var/lib/jenkins/nuru.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-3-88-203-16.compute-1.amazonaws.com
+                    sudo ssh -i /var/lib/jenkins/front1.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-18-130-21-178.eu-west-2.compute.amazonaws.com
 
                 
                     sudo rm -rf ~/node
